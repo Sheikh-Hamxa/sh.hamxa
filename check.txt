@@ -1,7 +1,11 @@
 
 Hey hamxa
 
-ok hamxa thanks for learning
+ hamxa thanks for learning
+
+---- explaination of few topics:
+Commit -- set of saved repository changes, which never be lost even if we revert back .
+it always same in every computer version etc (its hash key or  address).
 
 -- few commands to write below 
 
@@ -12,15 +16,19 @@ cd.. ####[go back to previous directory)
 cd dir_name to go to directory
 
 git remote -v ## show pull push files
-
+git command_name -h ## can show all parameters of this command
 ### show modified files
 git status
 
 ## select file to push/commit to github from local
 git add file_name  ## from git status can copy file name
+or git add .   ##### can select all files 
 
 ### git commit
 git commit -m "comment regarding this commit"
+
+### git log 
+shows overview of commits like time etc and total commits
 
 ### git push
 git push origin - branch name or git push origin
