@@ -8,6 +8,9 @@ Commit -- set of saved repository changes, which never be lost even if we revert
 it always same in every computer version etc (its hash key or  address).
 
 -- few commands to write below 
+echo this_name> file_name ## this file will be created and this name will be written in it 
+echo hello world > readme.md
+## readme.md file created and text hello world
 
 git clone link_of_repository ###(first time donload to system from github)
 
