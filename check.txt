@@ -2,3 +2,26 @@
 Hey hamxa
 
 ok hamxa thanks for learning
+
+-- few commands to write below 
+
+git clone link_of_repository ###(first time donload to system from github)
+
+dir #####to show all directories
+cd.. ####[go back to previous directory)
+cd dir_name to go to directory
+
+git remote -v ## show pull push files
+
+### show modified files
+git status
+
+## select file to push/commit to github from local
+git add file_name  ## from git status can copy file name
+
+### git commit
+git commit -m "comment regarding this commit"
+
+### git push
+git push origin - branch name or git push origin
+
