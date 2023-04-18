@@ -76,3 +76,10 @@ git revert commit_hash/id ###  you can undo changes made in this commit
 
 -1-> git reset soft commit_hash ## removes commit from history but keeps changes
 -2-> git reset hard commit_hash ## removes commits from history and removes changes too
+
+
+##### merge
+we have to merge all the changes in master branch from all local / develop once
+push all data after commit to develop / local 
+switch back to master
+git merge branch_name ### branch name where you created already changes and want in master
