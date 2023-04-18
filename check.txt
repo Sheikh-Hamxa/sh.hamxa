@@ -3,14 +3,16 @@ Hey hamxa
 
  hamxa thanks for learning
 
+first see branch or create branch and copy link and switch out to this 
+
 ---- explaination of few topics:
 Commit -- set of saved repository changes, which never be lost even if we revert back .
 it always same in every computer version etc (its hash key or  address).
 
 -- few commands to write below 
-echo this_name> file_name ## this file will be created and this name will be written in it 
+echo this_name> file_name ## this file_name will be created and this_name will be written in it 
 echo hello world > readme.md
-## readme.md file created and text hello world
+## readme.md file will be created with text hello world
 
 git clone link_of_repository ###(first time donload to system from github)
 
@@ -24,8 +26,18 @@ git command_name -h ## can show all parameters of this command
 git status
 
 ## select file to push/commit to github from local
-git add file_name  ## from git status can copy file name
+git add file_name second_file_name ## from git status can copy file name
 or git add .   ##### can select all files 
+
+### git pull origin dev
+
+
+#### staging
+its a place where we can select files to be committed next i.e instead git add . we can add selected files to be commited.
+
+--> unstaging
+if mistakenly we select a file for commit but we dont want to be commited we can do
+git reset file_name
 
 ### git commit
 git commit -m "comment regarding this commit"
@@ -36,3 +48,30 @@ shows overview of commits like time etc and total commits
 ### git push
 git push origin - branch name or git push origin
 
+## git pull  ## pulls all data from central repositoy to local folder
+
+
+
+#### Git branches 
+one is master branch and remainings are feature branches, its good to work on feature branches first and merge with master one later.
+every feature branch could be use for any specific feature/ task. multiple teams could work independenly on their feature branches. later they can merge.
+
+--1 - git branch ## shows available branches
+--2 - git branch branch_name  ## create new feature branch
+--3 - git switch/checkout branch_name ## switch to branch name selected
+--4-  git reflog ## shows all commits/ changes chckout/ switch from all branches not for selected
+--5-  git log ## as already know shows commit information including id
+--6- git show commit_hash/id ## will show all changes made in all files with green/ red lines, commit hash can copy from log point 5
+--7- git show --name-only commit_hash ## will show only file names
+
+
+
+##### Undo and Redo changes
+
+git revert commit_hash/id ###  you can undo changes made in this commit
+:q for save file
+
+## git reset commit_hash/id  ## we can go back unitl this commit time and all middle once will be removed.. its better when we are only single person working , when its a combine group then revert is better option
+
+-1-> git reset soft commit_hash ## removes commit from history but keeps changes
+-2-> git reset hard commit_hash ## removes commits from history and removes changes too
