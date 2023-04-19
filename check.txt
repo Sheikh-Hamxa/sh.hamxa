@@ -83,4 +83,14 @@ switch back to master
 git merge branch_name ### branch name where you created already changes and want in master
 
 
-#### other Important commands
+#### other Important commands [-h is for detail]
+
+1- git init -h ## initial branch  , create new local repository in foldr
+2- git remote add -h ## create new remote repository in project
+3- git diff -h ## shows difference between target and source branch
+4-  git tage -h ## create a sanpshot of project at certain time
+useful before pushing to master branch , can take sanp and see versions
+5- git stash -h-- if you select all by git add. then want to deselect can use this
+6- git rebase ## very important command to takes commit in original branch to present/current branch before apply new changes in this current branch
+
+
