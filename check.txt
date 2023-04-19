@@ -1,6 +1,4 @@
 
-Hey hamxa
-
  hamxa thanks for learning
 
 first see branch or create branch and copy link and switch out to this 
@@ -64,7 +62,7 @@ every feature branch could be use for any specific feature/ task. multiple teams
 --6- git show commit_hash/id ## will show all changes made in all files with green/ red lines, commit hash can copy from log point 5
 --7- git show --name-only commit_hash ## will show only file names
 --8 - show all files in branch
-     git ls-files
+  9-   git ls-files
 
 
 ##### Undo and Redo changes
@@ -83,3 +81,6 @@ we have to merge all the changes in master branch from all local / develop once
 push all data after commit to develop / local 
 switch back to master
 git merge branch_name ### branch name where you created already changes and want in master
+
+
+#### other Important commands
